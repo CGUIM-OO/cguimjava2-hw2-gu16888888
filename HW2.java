@@ -4,9 +4,9 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 /**
- * @author TODO: please add student ID and name here B0544201 ¹ËÓêŞ±
+ * @author TODO: please add student ID and name here B0544201 é¡¾é›¨è–‡
  * Try to write some comments for your codes (methods, 15 points)
- * ÏÈÈ·¶¨ÊäÈëÓĞ¼¸¸±ÅÆ£¨sc£©£¬½«deck¡¢cardÊµÌå»¯£¬ÓÃÈı¸öfor»ØÈ¦µÄ·½Ê½Ñ­»··Ö±ğĞ´³ö»¨É«¡¢´óĞ¡¡¢sc¸±ÅÆ²¢Í¨¹ıif print³öÀ´
+ * å…ˆç¡®å®šè¾“å…¥æœ‰å‡ å‰¯ç‰Œï¼ˆscï¼‰ï¼Œå°†deckã€cardå®ä½“åŒ–ï¼Œç”¨ä¸‰ä¸ªforå›åœˆçš„æ–¹å¼å¾ªç¯åˆ†åˆ«å†™å‡ºèŠ±è‰²ã€å¤§å°ã€scå‰¯ç‰Œå¹¶é€šè¿‡if printå‡ºæ¥
  */
 public class HW2 {
 
@@ -28,8 +28,8 @@ public class HW2 {
 	}
 	/**
 	 * This method is used for checking your result, not a part of your HW2
-	 * @param allCards ËùÓĞµÄÅÆ
-	 * @param nDeck ¿‚¹²ÓĞ×¸±ÅÆ
+	 * @param allCards æ‰€æœ‰çš„ç‰Œ
+	 * @param nDeck ç¸½å…±æœ‰å¹¾å‰¯ç‰Œ
 	 * @return
 	 */
 	private static boolean isAllCardsCorrect(ArrayList<Card> allCards,int nDeck){
@@ -67,7 +67,7 @@ public class HW2 {
 }
 /**
  * Description: TODO: please add description here
- * µÚÒ»¸ö»ØÈ¦´ú±íÓĞ¼¸¸±ÅÆ£¬µÚ¶ş¸ö»ØÈ¦´ú±í»¨É«£¬µÚÈı¸ö»ØÈ¦´ú±í´óĞ¡
+ * ç¬¬ä¸€ä¸ªå›åœˆä»£è¡¨æœ‰å‡ å‰¯ç‰Œï¼Œç¬¬äºŒä¸ªå›åœˆä»£è¡¨èŠ±è‰²ï¼Œç¬¬ä¸‰ä¸ªå›åœˆä»£è¡¨å¤§å°
  */
 class Deck{
 	private ArrayList<Card> cards;
@@ -80,11 +80,11 @@ class Deck{
 		//Card card=new Card(1,1); ->means new card as clubs ace
 		//cards.add(card);
 		//Sample code end
-		for (int deck=1;deck<=nDeck;deck++){//¼¸¸±ÅÆ
-			for(int suit=1;suit<=4;suit++){//»¨É«
-				for(int Rank=1;Rank<=13;Rank++){//´óĞ¡
+		for (int deck=1;deck<=nDeck;deck++){//å‡ å‰¯ç‰Œ
+			for(int suit=1;suit<=4;suit++){//èŠ±è‰²
+				for(int Rank=1;Rank<=13;Rank++){//å¤§å°
 					Card card=new Card(suit,Rank);
-					cards.add(card);//½«ĞÂÊµÌå»¯µÄcard¼Óµ½Çåµ¥£¨cards£©ÀïÃæ
+					cards.add(card);//å°†æ–°å®ä½“åŒ–çš„cardåŠ åˆ°æ¸…å•ï¼ˆcardsï¼‰é‡Œé¢
 				}
 			}
 		}
@@ -98,7 +98,7 @@ class Deck{
 		int n=0;
 		while (cards.size()>n){
 			Card card=new Card(cards.get(n).getSuit(),cards.get(n).getRank());
-			card.printCard();//ºô½Ğprintcard
+			card.printCard();//å‘¼å«printcard
 			n++;
 		}
 	}
@@ -108,8 +108,8 @@ class Deck{
 }
 /**
  * Description: TODO: please add description here
- * ½«»¨É«¼°´óĞ¡±àºÅ£¨Clubs=1, Diamonds=2, Hearts=3, Spades=4£©£¨rank 1-13£©
- * Í¨¹ıif ÅĞ¶ÏÏàÓ¦µÄ»¨É«ºÍ´óĞ¡²¢print³öÀ´
+ * å°†èŠ±è‰²åŠå¤§å°ç¼–å·ï¼ˆClubs=1, Diamonds=2, Hearts=3, Spades=4ï¼‰ï¼ˆrank 1-13ï¼‰
+ * é€šè¿‡if åˆ¤æ–­ç›¸åº”çš„èŠ±è‰²å’Œå¤§å°å¹¶printå‡ºæ¥
  */
 class Card{
 	private int suit; //Definition: 1~4, Clubs=1, Diamonds=2, Hearts=3, Spades=4
@@ -161,10 +161,10 @@ class Card{
 			System.out.println("K");
 		
 	}
-	public int getSuit(){
+	public int getSuit(){//å›ä¼ suit
 		return suit;
 	}
-	public int getRank(){
+	public int getRank(){//å›ä¼ rank
 		return rank;
 	}
 }
